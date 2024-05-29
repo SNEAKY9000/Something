@@ -15,9 +15,64 @@ class Something_Else extends Player{
   */
   //write your bot here
   getMove(wells, store1, store2){
+    if (wells[5] >= 1){
+      result = 5
+    }
+    else if (wells[4] >= 1){
+      result = 4
+    }
+    else if (wells[3] >= 1){
+      result = 3
+    }
+    else if (wells[2] >= 1){
+      result = 2
+    }
+    else if (wells[1] >= 1){
+      result = 1
+    }
+    else if (wells[0] >= 1){
+      result = 0
+    }
+    
+    if (wells[5] == 1){
+      return 5
+    }
+    if (wells[4] == 2){
+      return 4
+    }
+    if (wells[3] == 3){
+      return 3
+    }
+    if (wells[2] == 4){
+      return 2
+    }
+    if (wells[1] == 5){
+      return 1
+    }
+    if (wells[0] == 6){
+      return 0
+    }
 
-   
-    return (Math.random()*6)|0
+    if (wells[5] >= 8){
+      return 5
+    }
+    if (wells[4] >= 9){
+      return 4
+    }
+    if (wells[3] >= 10){
+      return 3
+    }
+    if (wells[2] >= 11){
+      return 2
+    }
+    if (wells[1] >= 12){
+      return 1
+    }
+    if (wells[0] >= 13){
+      return 0
+    }
+    
+    return result
   }
  
  
