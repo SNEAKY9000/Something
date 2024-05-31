@@ -72,7 +72,27 @@ class Something_Else extends Player{
       return 0
     }
     
-    return result
+    let count = 0;
+    let maxCount = 0;
+    let test = result;
+
+    for (let tester = result; tester >= 0; tester -= 1){
+      let holder = tester;
+      
+      while (wells[tester] >= 1){
+        tester = tester + wells[tester];
+        count += 1;
+      }
+      if (maxCount <= count){
+        maxCount = count;
+        test = holder;
+      }
+      
+      tester = holder;
+      count = 0;
+    }
+    
+    return test
   }
  
  
