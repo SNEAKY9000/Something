@@ -78,11 +78,22 @@ class Something_Else extends Player{
 
     for (let tester = result; tester >= 0; tester -= 1){
       let holder = tester;
+      let before = tester;
       
       while (wells[tester] >= 1){
         tester = tester + wells[tester];
         count += 1;
+        if (tester > 5 && tester < 12){
+          tester -= 1;
+        }
+        else if (tester > 11 && tester < 18){
+          tester -= 12;
+        }
+        else{
+          tester -= 13
+        }
       }
+      
       if (maxCount <= count){
         maxCount = count;
         test = holder;
