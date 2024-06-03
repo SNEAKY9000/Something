@@ -94,7 +94,7 @@ class Something_Else extends Player{
         count += 1;
         
         for (let limit = holder; limit <= tester; limit += 1){
-          if (limit = tester && limit != 6){
+          if (limit == tester && limit != 6){
             if (wellsNew[tester] != 0){
               wellsNew[tester] += 1;
             }
