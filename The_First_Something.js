@@ -85,8 +85,10 @@ class Something_Else extends Player{
 
     for (let tester = result; tester >= 0; tester -= 1){
       let holder = tester;
-      
-      while (wellsNew[tester] >= 1){
+
+      let hardLimit = 0;
+      while (wellsNew[tester] >= 1 && hardLimit<100){
+        hardLimit++;
         
         tester += wellsNew[tester];
         count += 1;
