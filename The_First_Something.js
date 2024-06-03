@@ -15,6 +15,9 @@ class Something_Else extends Player{
   */
   //write your bot here
   getMove(wells, store1, store2){
+
+    let result = 0;
+    
     if (wells[5] >= 1){
       result = 5
     }
