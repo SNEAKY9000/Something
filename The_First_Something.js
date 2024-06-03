@@ -1,5 +1,7 @@
 class Something_Else extends Player{
 
+
+  // fair enough i suppose
   /*wells is a 12 element int array of the number of pieces in each space (shown below)
   S1 and S2 are the player's stores, which decides the score for each player.
  
