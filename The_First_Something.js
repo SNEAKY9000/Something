@@ -102,6 +102,8 @@ class Something_Else extends Player{
           else if(limit == 6){
             tester -= 1;
             if (tester < 6){
+              count += 2;
+              wellsNew[tester] = 0;
               break
             }
             else{
@@ -116,7 +118,7 @@ class Something_Else extends Player{
         }
       }
       
-      if (maxCount <= count){
+      if (maxCount < count){
         maxCount = count;
         test = holder;
       }
