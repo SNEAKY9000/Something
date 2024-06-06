@@ -1,5 +1,10 @@
-class Something_Else extends Player{
-
+class Something_Else{
+  constructor(name){
+    this.name = name;
+  }
+  setPlayer1(player1){
+    this.isPlayer1 = player1;
+  }
 
   // fair enough i suppose this the new one
   /*wells is a 12 element int array of the number of pieces in each space (shown below)
@@ -129,7 +134,10 @@ class Something_Else extends Player{
     }
     
     return test
+  } 
+  
+
+  getName(){
+    return this.name
   }
- 
- 
 }
