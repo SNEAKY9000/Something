@@ -123,7 +123,7 @@ class Something_Else{
         }
       }
       
-      if (maxCount < count){
+      if (maxCount <= count){
         maxCount = count;
         test = holder;
       }
