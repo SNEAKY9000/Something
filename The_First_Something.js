@@ -58,6 +58,25 @@ class Something_Else extends Player{
       return 0
     }
 
+    if (wells[5] == 14){
+      return 5
+    }
+    if (wells[4] == 15){
+      return 4
+    }
+    if (wells[3] == 16){
+      return 3
+    }
+    if (wells[2] == 17){
+      return 2
+    }
+    if (wells[1] == 18){
+      return 1
+    }
+    if (wells[0] == 19){
+      return 0
+    }
+
     let count = 0;
     let maxCount = 0;
     let test = result;
