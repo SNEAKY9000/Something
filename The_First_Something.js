@@ -43,6 +43,10 @@ class Something_Else{
     else if (wells[0] >= 1){
       result = 0
     }
+
+    if (math.random() > 0.5){
+      return result;
+    }
     
     if (wells[5] == 1){
       return 5
